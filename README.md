@@ -3,7 +3,7 @@
 ```
 mv go_pg.go main.go
 
-# the name of the executable will be tdbill
+# the name of the executable will be go_pg
 go mod init go_pg
 
 # will download deps
