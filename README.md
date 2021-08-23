@@ -1,18 +1,30 @@
-# My Project
+# Project - `go_pg`
 
+```
 mv go_pg.go main.go
-go mod init go_pg # the name of the executable will be tdbill
-go mod tidy        # will download deps
+
+# the name of the executable will be tdbill
+go mod init go_pg
+
+# will download deps
+go mod tidy
 
 go build
+```
 
+push changes to github
+
+```
 git status
 git add .
-git status # executable should not be in list
+# executable should not be in list
+git status
 git commit -S
 git push origin master
+```
 
 .gitignore
+
 ```
 *
 !.gitignore
