@@ -1,7 +1,7 @@
 # My Project
 
-mv myproject.go main.go
-go mod init tdbill # the name of the executable will be tdbill
+mv go_pg.go main.go
+go mod init go_pg # the name of the executable will be tdbill
 go mod tidy        # will download deps
 
 go build
