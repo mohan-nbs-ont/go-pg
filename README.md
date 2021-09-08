@@ -1,33 +1,38 @@
-# Project - `go_pg`
+# Connect to a postgresql database
 
 ```
 mv go_pg.go main.go
-
-# the name of the executable will be go_pg
 go mod init go_pg
-
-# will download deps
 go mod tidy
 
 go build
+./go_pg
 ```
 
-push changes to github
+## git
 
-```
-git status
-git add .
-# executable should not be in list
-git status
-git commit -S
-git push origin master
-```
-
-.gitignore
+* create .gitignore
 
 ```
 *
 !.gitignore
 !*.go
 !*.mod
+!*.sum
+!README.md
+```
+
+* initialize, add, push
+
+```
+git init
+git add .gitignore
+git add .
+git status
+git commit
+git remote add origin git@github.com:mohan-nbs-ont/go_pg.git
+gh auth login
+gh repo create go_pg --private
+git push --set-upstream origin master
+git push
 ```
